@@ -10,7 +10,7 @@ There's no need to finish all the requirements, you will be evaluated by your so
 Download or clone this repo by using the link below:
 
 ```
-https://github.com/zubairehman/flutter-boilerplate-project.git
+https://github.com/d2c-holdings/lover-challenge.git
 ```
 
 **Step 2:**
