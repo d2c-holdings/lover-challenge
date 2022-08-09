@@ -1,4 +1,0 @@
-#Mon Aug 08 19:49:32 BRT 2022
-base.0=/Users/lorran/Documents/lover/lover-challenge/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
