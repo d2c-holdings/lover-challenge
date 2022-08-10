@@ -1,6 +1,6 @@
 # Lover Technical Challenge
 
-The objective of this challenge is to evaluate the candidate's overall knowledge of Flutter with some packages that we use in our main app.
+The objective of this challenge is to evaluate your overall knowledge of Flutter with some packages that we use in our main app.
 There is no need to finish all the requirements, the evaluation criteria is the solution to the prompt, the organization of the project and
 coding good practices.
 
