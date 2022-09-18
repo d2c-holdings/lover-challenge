@@ -2,3 +2,6 @@
 /.vscode/
 /build/
 /.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+ios/Podfile.lock
