@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lover_challenge/assets/lover_colors.dart';
+import 'package:lover_challenge/common/custom_icon.dart';
+import 'package:lover_challenge/data/enums/custom_icons.dart';
+import 'package:lover_challenge/presentation/cats/cats_page.dart';
 import 'package:lover_challenge/presentation/home/home_page.dart';
 import 'package:lover_challenge/presentation/main/main_page_controller.dart';
+import 'package:lover_challenge/presentation/main/widgets/main_bar_items.dart';
 import 'package:lover_challenge/presentation/settings/settings_page.dart';
 
 class MainPage extends GetView<MainPageController> {
@@ -32,30 +36,7 @@ class MainPage extends GetView<MainPageController> {
             selectedItemColor: LoverColors.offWhite,
             unselectedLabelStyle: unselectedLabelStyle,
             selectedLabelStyle: selectedLabelStyle,
-            items: [
-              BottomNavigationBarItem(
-                icon: Container(
-                  margin: const EdgeInsets.only(bottom: 7),
-                  child: const Icon(
-                    Icons.home,
-                    size: 20.0,
-                  ),
-                ),
-                label: 'Home',
-                backgroundColor: const Color.fromRGBO(36, 54, 101, 1.0),
-              ),
-              BottomNavigationBarItem(
-                icon: Container(
-                  margin: const EdgeInsets.only(bottom: 7),
-                  child: const Icon(
-                    Icons.settings,
-                    size: 20.0,
-                  ),
-                ),
-                label: 'Settings',
-                backgroundColor: const Color.fromRGBO(36, 54, 101, 1.0),
-              ),
-            ],
+            items: controller.navBarItems,
           ),
         ),
       ),
@@ -69,10 +50,7 @@ class MainPage extends GetView<MainPageController> {
       bottomNavigationBar: buildBottomNavigationMenu(context),
       body: Obx(() => IndexedStack(
             index: controller.tabIndex.value,
-            children: const [
-              HomePage(),
-              SettingsPage()
-            ],
+            children: controller.tabs,
           )),
     ));
   }

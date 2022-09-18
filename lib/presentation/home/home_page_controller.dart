@@ -1,8 +1,7 @@
 import 'package:get/get.dart';
 
 class HomePageController extends GetxController {
-
-HomePageController();
+  HomePageController();
 
   final _obj = ''.obs;
   set obj(value) => _obj.value = value;

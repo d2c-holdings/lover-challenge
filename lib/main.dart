@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lover_challenge/data/service/services.dart';
 
 import 'app_modules.dart';
 
-void main() {
+Future<void> main() async {
+  await Services.initServices();
   runApp(const CatApp());
 }
 
